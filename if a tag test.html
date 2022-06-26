@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+    <html>
+    <body>
+
+    <script>
+    function myFunction() {
+        var x = document.getElementById("fname");
+   if(x.value.indexOf("aaaa")>=0)document.getElementById("result").innerHTML= "<a href="+x.value+">"+ x.value + "</a>" ;
+        else document.getElementById("result").innerHTML=x.value;
+    }
+    </script>
+
+    <form method="post" action="esegui.php">
+      Name<br><input type="text" id="fname" onkeyup="myFunction()"> 
+    </form>
+
+    <p id="result"></p>
+
+    </body>
+    </html>
